@@ -1,1 +1,38 @@
-Test
+{
+    "name": "Travel B2B Test App",
+    "description": "This is a test",
+    "version": "0.1",
+    "category": "test",
+    "main": "public/js/app_module.js",
+    "config":{
+        "details":{
+            "Language": "English",
+            "Price": "Free",
+            "Restrictions": "None",
+            "TOS":"http://www.travel-b2b.com/terms",
+            "has_js": true
+        }, 
+        "assets":{
+            "logos" : {
+                "40px": "./public/img/logo.gif"
+            },
+            "test_image" : [
+                "./public/img/test.png"
+            ]
+        },
+        "interface": [
+            {
+                "type": "string",
+                "id": "test",
+                "name": "Test Field",
+                "description": "Please enter this test field",
+                "domain_request": true,
+                "private": true
+            }
+        ]
+    },
+    "account": {
+        "callback_url": "http://cloudflare.travel-b2b.com/test",
+        "user_fields": ["account"]
+    }
+}
