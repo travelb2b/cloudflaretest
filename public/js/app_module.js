@@ -16,7 +16,7 @@ CloudFlare.define("travelb2btest",
             "http://cloudflare.travel-b2b.com/test?callback=?",
             {domain_id: config && config.domain_id},
             function(data){
-                if (this.data.count){
+                if (this.data.count) {
                     addBadge(this.data.count);
                 }
             }
